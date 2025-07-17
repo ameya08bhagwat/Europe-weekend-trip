@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explore Schengen visa countries from Frankfurt</title>
+  <title>13-Weekend Schengen Travel from Frankfurt</title>
   <style>
     body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; margin: 0; padding: 0; color: #333; }
     header { background: #0077b6; color: white; padding: 2em 1em; text-align: center; }
@@ -23,45 +23,32 @@
     <p>Plan budget-friendly weekend couple getaways from August to October 2025</p>
   </header>  <div class="container">
     <a href="/downloads/13_Weekend_Schengen_Trip_From_Frankfurt_with_Links.pdf" class="pdf-btn" download>📄 Download PDF</a>
-    <a href="https://www.google.com/maps/d/u/0/" target="_blank" class="map-btn">🗺️ View Map of Destinations</a>
+    <a href="https://www.google.com/maps/d/edit?mid=1IDzIBIx1kAy2aAMdk-hV-ynjqFpnYkU&usp=sharing" target="_blank" class="map-btn">🗺️ View Map of All Destinations</a>
   </div>  <div class="container" id="trip-container"></div>  <div class="footer">
     &copy; 2025 Weekend Travel Planner. All rights reserved.
-  </div><script>
-const trips = [
-  {
-    city: "Paris, France",
-    img: "https://tse1.mm.bing.net/th/id/OIP.y3EfJXP3R4uvuTkG3S9vkAHaE_?pid=Api",
-    train: "Frankfurt Hbf → Paris Gare de l'Est",
-    distance: "478 km / 3h 40m",
-    hostel: "Peace & Love Hostel",
-    hostelLink: "https://www.thepeoplehostel.com/en/destinations/paris-marais/",
-    food: "Chennai Dosa",
-    foodLink: "https://goo.gl/maps/N6UQFSBLMYM2",
-    sights: "Eiffel Tower, Louvre, Seine Cruise",
-    bestTime: "April to June, September to October",
-    cost: "₹9,000–₹12,000"
-  },
-  // Other trip objects follow the same structure
-];
-
-const container = document.getElementById('trip-container');
-trips.forEach((trip, index) => {
-  const div = document.createElement('div');
-  div.className = 'trip';
-  div.innerHTML = `
-    <h2>${index + 1}. ${trip.city}</h2>
-    <img src="${trip.img}" alt="${trip.city}">
-    <div class="info">
-      <strong>Train Route:</strong> ${trip.train}<br>
-      <strong>Distance & Duration:</strong> ${trip.distance}<br>
-      <strong>Hostel:</strong> <a href="${trip.hostelLink}" target="_blank">${trip.hostel}</a><br>
-      <strong>Restaurant:</strong> <a href="${trip.foodLink}" target="_blank">${trip.food}</a><br>
-      <strong>Must Visit:</strong> ${trip.sights}<br>
-      <strong>Best Time to Visit:</strong> ${trip.bestTime}<br>
-      <strong>Cost:</strong> ${trip.cost}
-    </div>
-  `;
-  container.appendChild(div);
-});
-</script></body>
+  </div>  <script>
+    fetch('https://raw.githubusercontent.com/openai/chatgpt-schengen-trip/main/trips.json')
+      .then(response => response.json())
+      .then(trips => {
+        const container = document.getElementById('trip-container');
+        trips.forEach((trip, index) => {
+          const div = document.createElement('div');
+          div.className = 'trip';
+          div.innerHTML = `
+            <h2>${index + 1}. ${trip.city}</h2>
+            <img src="${trip.img}" alt="${trip.city}">
+            <div class="info">
+              <strong>Train Route:</strong> ${trip.train}<br>
+              <strong>Distance & Duration:</strong> ${trip.distance}<br>
+              <strong>Hostel:</strong> <a href="${trip.hostelLink}" target="_blank">${trip.hostel}</a><br>
+              <strong>Restaurant:</strong> <a href="${trip.foodLink}" target="_blank">${trip.food}</a><br>
+              <strong>Must Visit:</strong> ${trip.sights}<br>
+              <strong>Best Time to Visit:</strong> ${trip.bestTime}<br>
+              <strong>Cost:</strong> ${trip.cost}
+            </div>
+          `;
+          container.appendChild(div);
+        });
+      });
+  </script></body>
 </html>
