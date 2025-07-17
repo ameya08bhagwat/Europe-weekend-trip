@@ -1,1 +1,207 @@
-
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13-Weekend Schengen Travel from Frankfurt</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; margin: 0; padding: 0; color: #333; }
+    header { background: #0077b6; color: white; padding: 2em 1em; text-align: center; }
+    .container { max-width: 1100px; margin: auto; padding: 2em; background: white; }
+    .trip { border-bottom: 2px solid #eee; padding: 1.5em 0; }
+    .trip img { width: 100%; max-width: 600px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .info { margin-top: 1em; line-height: 1.6; }
+    h2 { color: #023e8a; }
+    a { color: #0077b6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { text-align: center; padding: 1em; font-size: 0.9em; color: #777; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>13-Weekend Schengen Travel from Frankfurt</h1>
+    <p>Plan budget-friendly weekend couple getaways from August to October 2025</p>
+  </header>
+  <div class="container"><!-- Weekend Trips --><script>
+  const trips = [
+    {
+      city: "Paris, France",
+      img: "https://tse1.mm.bing.net/th/id/OIP.y3EfJXP3R4uvuTkG3S9vkAHaE_?pid=Api",
+      train: "Frankfurt Hbf → Paris Gare de l'Est",
+      distance: "478 km / 3h 40m",
+      hostel: "Peace & Love Hostel",
+      hostelLink: "https://www.thepeoplehostel.com/en/destinations/paris-marais/",
+      food: "Chennai Dosa",
+      foodLink: "https://goo.gl/maps/N6UQFSBLMYM2",
+      sights: "Eiffel Tower, Louvre, Seine Cruise",
+      cost: "₹9,000–₹12,000"
+    },
+    {
+      city: "Amsterdam, Netherlands",
+      img: "https://tse2.mm.bing.net/th/id/OIP.DANsP0HhKNNes7PhZm7HPAHaE8?pid=Api",
+      train: "Frankfurt Hbf → Amsterdam Centraal",
+      distance: "364 km / 3h 35m",
+      hostel: "Seven Bridges Hotel",
+      hostelLink: "https://sevenbridgeshotel.nl",
+      food: "Himalayan Kitchen",
+      foodLink: "https://goo.gl/maps/eRXL5uNMUDn",
+      sights: "Canal Tour, Anne Frank House, Rijksmuseum",
+      cost: "₹10,000–₹13,000"
+    },
+    {
+      city: "Brussels, Belgium",
+      img: "https://tse4.mm.bing.net/th/id/OIP.z4a7AczItHQ8KHBRSc-x-wHaE8?pid=Api",
+      train: "Frankfurt Hbf → Bruxelles-Midi",
+      distance: "320 km / 3h 30m",
+      hostel: "Sleep Well Youth Hostel",
+      hostelLink: "https://www.sleepwell.be",
+      food: "Indian Express",
+      foodLink: "https://goo.gl/maps/TmQ49L6yVNp",
+      sights: "Grand Place, Atomium, Manneken Pis",
+      cost: "₹8,000–₹11,000"
+    },
+    {
+      city: "Zurich, Switzerland",
+      img: "https://tse4.mm.bing.net/th/id/OIP.4dr0Y-LIsU8EMvExiyR7ZgHaE7?pid=Api",
+      train: "Frankfurt Hbf → Zürich HB",
+      distance: "500 km / 4h",
+      hostel: "City Backpacker Hostel",
+      hostelLink: "https://www.citybackpacker.ch",
+      food: "Tamarind Hill",
+      foodLink: "https://goo.gl/maps/HmfnCRPYGy9Kp9j26",
+      sights: "Old Town, Lake Zurich, Uetliberg",
+      cost: "₹13,000–₹16,000"
+    },
+    {
+      city: "Vienna, Austria",
+      img: "https://tse3.mm.bing.net/th/id/OIP.gkIR1G68zIIC-IMb9ab8PgHaE8?pid=Api",
+      train: "Frankfurt Hbf → Wien Hbf",
+      distance: "710 km / 6h 45m",
+      hostel: "Do Step Inn",
+      hostelLink: "https://www.dostepinn.at",
+      food: "Nam Nam",
+      foodLink: "https://goo.gl/maps/viyAqE9nntPq3YhH7",
+      sights: "Schönbrunn Palace, Belvedere, Opera House",
+      cost: "₹12,000–₹15,000"
+    },
+    {
+      city: "Luxembourg City, Luxembourg",
+      img: "https://tse4.mm.bing.net/th/id/OIP.6BdOlt0N5U6SBub3s2NfigHaEK?pid=Api",
+      train: "Frankfurt Hbf → Luxembourg",
+      distance: "260 km / 3h",
+      hostel: "Youth Hostel Luxembourg City",
+      hostelLink: "https://www.youthhostels.lu",
+      food: "Taj Mahal Restaurant",
+      foodLink: "https://goo.gl/maps/Hsb1c43uDJo7PybH9",
+      sights: "Old Quarters, Casemates, Vianden Castle",
+      cost: "₹7,000–₹9,000"
+    },
+    {
+      city: "Prague, Czech Republic",
+      img: "https://tse1.mm.bing.net/th/id/OIP.0OE7YCSAMAB7RSwRjTGsTwHaE7?pid=Api",
+      train: "Frankfurt Hbf → Praha hl.n.",
+      distance: "510 km / 6h",
+      hostel: "Hostel Homer",
+      hostelLink: "https://hostelhomer.com",
+      food: "Beas Vegetarian Dhaba",
+      foodLink: "https://goo.gl/maps/5ZtwnJNLfE62",
+      sights: "Charles Bridge, Prague Castle, Astronomical Clock",
+      cost: "₹9,000–₹11,000"
+    },
+    {
+      city: "Milan, Italy",
+      img: "https://tse2.mm.bing.net/th/id/OIP.s_6A5BO9O_Q5TYWkV4ZBlwHaE7?pid=Api",
+      train: "Frankfurt → Milano Centrale (via Zurich)",
+      distance: "730 km / 7h 30m",
+      hostel: "Ostello Bello Grande",
+      hostelLink: "https://ostellobello.com",
+      food: "Gandhi Indian Restaurant",
+      foodLink: "https://goo.gl/maps/5nRZR9YSPi42",
+      sights: "Duomo, Galleria, Sforza Castle",
+      cost: "₹13,000–₹16,000"
+    },
+    {
+      city: "Ljubljana, Slovenia",
+      img: "https://tse3.mm.bing.net/th/id/OIP.N_UaaPBDMG3mBN0pMOxz9wHaE8?pid=Api",
+      train: "Frankfurt → Ljubljana (via Vienna)",
+      distance: "900 km / 10h",
+      hostel: "Hostel Tresor",
+      hostelLink: "https://www.hostel-tresor.si",
+      food: "Namaste India",
+      foodLink: "https://goo.gl/maps/63PyNRNzBK72",
+      sights: "Lake Bled, Ljubljana Castle",
+      cost: "₹11,000–₹14,000"
+    },
+    {
+      city: "Budapest, Hungary",
+      img: "https://tse3.mm.bing.net/th/id/OIP.ZOybLBH-DQMa7A7Q1iRAowHaE8?pid=Api",
+      train: "Frankfurt → Budapest Keleti (via Vienna)",
+      distance: "1050 km / 11h",
+      hostel: "Avenue Hostel",
+      hostelLink: "https://www.avenuehostel.hu",
+      food: "Govinda Restaurant",
+      foodLink: "https://goo.gl/maps/Hg8SJnQ1kQx",
+      sights: "Buda Castle, Parliament, Thermal Baths",
+      cost: "₹12,000–₹15,000"
+    },
+    {
+      city: "Wroclaw, Poland",
+      img: "https://tse3.mm.bing.net/th/id/OIP.0XOSHLGJz9mptTSq0Um_SAHaE8?pid=Api",
+      train: "Frankfurt → Wrocław Główny (via Berlin)",
+      distance: "950 km / 10h",
+      hostel: "Grampa’s Hostel",
+      hostelLink: "https://www.grampas.pl",
+      food: "Tandoori Love",
+      foodLink: "https://goo.gl/maps/ZgPZnCUvqYz",
+      sights: "Market Square, Cathedral Island",
+      cost: "₹10,000–₹12,000"
+    },
+    {
+      city: "Copenhagen, Denmark",
+      img: "https://tse4.mm.bing.net/th/id/OIP.KmgqAonfgwLfhtHoUTrRWgHaE8?pid=Api",
+      train: "Frankfurt → København H (via Hamburg)",
+      distance: "875 km / 10h",
+      hostel: "Urban House Copenhagen",
+      hostelLink: "https://urbanhouse.me",
+      food: "Curry Leaves",
+      foodLink: "https://goo.gl/maps/yBfqsqgAVMS2",
+      sights: "Nyhavn, Tivoli Gardens, Rosenborg Castle",
+      cost: "₹14,000–₹17,000"
+    },
+    {
+      city: "Stockholm, Sweden",
+      img: "https://tse1.mm.bing.net/th/id/OIP.f5QOe0c6PU43kChEmKONvQHaE8?pid=Api",
+      train: "Frankfurt → Stockholm Central (via Copenhagen)",
+      distance: "1400 km / 16h",
+      hostel: "City Backpackers Hostel",
+      hostelLink: "https://citybackpackers.org",
+      food: "Shanti Classic",
+      foodLink: "https://goo.gl/maps/QhCR7YH6T9s",
+      sights: "Gamla Stan, Vasa Museum",
+      cost: "₹15,000–₹18,000"
+    }
+  ];
+</script><script>
+  const container = document.querySelector('.container');
+  trips.forEach((trip, index) => {
+    const div = document.createElement('div');
+    div.className = 'trip';
+    div.innerHTML = `
+      <h2>${index + 1}. ${trip.city}</h2>
+      <img src="${trip.img}" alt="${trip.city}">
+      <div class="info">
+        <strong>Train Route:</strong> ${trip.train}<br>
+        <strong>Distance & Duration:</strong> ${trip.distance}<br>
+        <strong>Hostel:</strong> <a href="${trip.hostelLink}" target="_blank">${trip.hostel}</a><br>
+        <strong>Restaurant:</strong> <a href="${trip.foodLink}" target="_blank">${trip.food}</a><br>
+        <strong>Must Visit:</strong> ${trip.sights}<br>
+        <strong>Cost:</strong> ${trip.cost}
+      </div>
+    `;
+    container.appendChild(div);
+  });
+</script>  </div>
+  <div class="footer">
+    &copy; 2025 Weekend Travel Planner. All rights reserved.
+  </div>
+</body>
+</html>
