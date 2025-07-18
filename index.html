@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,12 +22,20 @@
   <header>
     <h1>13-Weekend Schengen Travel from Frankfurt</h1>
     <p>Plan budget-friendly weekend couple getaways from August to October 2025</p>
-  </header>  <div class="container">
+  </header>
+
+  <div class="container">
     <a href="/downloads/13_Weekend_Schengen_Trip_From_Frankfurt_with_Links.pdf" class="pdf-btn" download>📄 Download PDF</a>
     <a href="https://www.google.com/maps/d/edit?mid=1IDzIBIx1kAy2aAMdk-hV-ynjqFpnYkU&usp=sharing" target="_blank" class="map-btn">🗺️ View Map of All Destinations</a>
-  </div>  <div class="container" id="trip-container"></div>  <div class="footer">
+  </div>
+
+  <div class="container" id="trip-container"></div>
+
+  <div class="footer">
     &copy; 2025 Weekend Travel Planner. All rights reserved.
-  </div>  <script>
+  </div>
+
+  <script>
     fetch('https://raw.githubusercontent.com/openai/chatgpt-schengen-trip/main/trips.json')
       .then(response => response.json())
       .then(trips => {
@@ -50,5 +59,6 @@
           container.appendChild(div);
         });
       });
-  </script></body>
+  </script>
+</body>
 </html>
